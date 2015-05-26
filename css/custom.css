@@ -14,10 +14,6 @@
 	display: block;
 }
 
-.info-card{
-	
-}
-
 .animate-link{
 	overflow: scroll;
 	z-index: 3;
@@ -26,6 +22,4 @@
 	top: 0;
 	left: 0;
 	margin: 0;
-	animation: animate-link 1s ease-out forwards;
-	-webkit-animation: animate-link 1s ease-out forwards;
 }

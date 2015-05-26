@@ -11,18 +11,20 @@ var main = function(){
 
 		switch( $(this).attr('id') ) {
 			case "about-panel":
-				$('#about-info').fadeIn(3000);
+				$('#about-info').fadeIn(2000);
 				break;
 			case "blog-panel":
-				$('#blog-info').fadeIn(3000);
+				$('#blog-info').fadeIn(2000);
 				break;
 			case "contact-panel":
-				$('#contact-info').fadeIn(3000);
+				$('#contact-info').fadeIn(2000);
 				break;
 			case "cv-panel":
-				$('#cv-info').fadeIn(3000);
+				$('#cv-info').fadeIn(2000);
 				break;
 		}
+
+		$(document).scrollTop(0);
 	});
 
 	$('#exit-button').click(function(){
@@ -30,6 +32,8 @@ var main = function(){
 		$('.info-card').hide();
 		$('#exit-button').hide();
 		$('#nav-button').show();
+
+		$(document).scrollTop(0);
 	})
 
 };
