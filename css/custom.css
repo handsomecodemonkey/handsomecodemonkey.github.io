@@ -2,8 +2,8 @@
 	font-weight: 200;
 }
 
-.card-panel{
-	overflow: scroll;
+.my-links .card-panel{
+	cursor: pointer;
 }
 
 .light-font{
@@ -19,6 +19,7 @@
 }
 
 .animate-link{
+	overflow: scroll;
 	z-index: 3;
 	width: 100%;
 	position: absolute;
@@ -28,24 +29,3 @@
 	animation: animate-link 1s ease-out forwards;
 	-webkit-animation: animate-link 1s ease-out forwards;
 }
-
-@-webkit-keyframes animate-link{
-	from{
-		height: 0%;
-	}
-	to{
-		height: 100%;
-
-	}
-}
-
-@keyframes animate-link{
-	from{
-		height: 0%;
-	}
-	to{
-		height: 100%;
-
-	}
-}
-
