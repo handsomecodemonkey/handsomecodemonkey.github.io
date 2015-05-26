@@ -3193,7 +3193,7 @@ $(document).ready(function(){
     	}
 
     });
-    /*
+    
     $(document).on('mouseenter.fixedActionBtn', '.fixed-action-btn', function(e) {
       var $this = $(this);
 
@@ -3212,6 +3212,7 @@ $(document).ready(function(){
       });
 
     });
+	
 
     $(document).on('mouseleave.fixedActionBtn', '.fixed-action-btn', function(e) {
       var $this = $(this);
@@ -3224,7 +3225,7 @@ $(document).ready(function(){
         { opacity: "0", scaleX: ".4", scaleY: ".4", translateY: "40px"},
         { duration: 80 });
     });
-	*/
+	
 
   });
 }( jQuery ));
