@@ -1,0 +1,50 @@
+.my-links .card-panel h2{
+	font-weight: 200;
+}
+
+.card-panel{
+	overflow: scroll;
+}
+
+.light-font{
+	font-weight: 200;
+}
+
+.my-links .waves-effect{
+	display: block;
+}
+
+.info-card{
+	
+}
+
+.animate-link{
+	z-index: 3;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	animation: animate-link 1s ease-out forwards;
+	-webkit-animation: animate-link 1s ease-out forwards;
+}
+
+@-webkit-keyframes animate-link{
+	from{
+		width: 0%;
+	}
+	to{
+		width: 100%;
+
+	}
+}
+
+@keyframes animate-link{
+	from{
+		height: 0%;
+	}
+	to{
+		height: 100%;
+
+	}
+}
