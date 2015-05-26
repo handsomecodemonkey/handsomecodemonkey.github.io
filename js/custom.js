@@ -36,6 +36,15 @@ var main = function(){
 		$(document).scrollTop(0);
 	})
 
+	$('.card-panel').hover(
+		function(){
+			$(this).addClass("z-depth-4");
+		},
+		function(){
+			$(this).removeClass("z-depth-4");
+		}
+	);
+
 };
 
 $(document).ready(main);

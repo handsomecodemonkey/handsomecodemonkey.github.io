@@ -4,6 +4,8 @@
 
 .my-links .card-panel{
 	cursor: pointer;
+	transition: box-shadow 0.5s ease-out;
+	-webkit-transition: box-shadow 0.5s ease-out;
 }
 
 .light-font{
@@ -26,9 +28,9 @@
 }
 
 .card .card-action a{
-	
+	color: #0d47a1;
 }
 
 .card .card-action a:hover{
-
+	color: #2196f3;
 }
