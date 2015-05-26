@@ -5,7 +5,6 @@ var main = function(){
 
 	$('.card-panel').click(function(){
 		$(this).addClass("animate-link");
-		$(this).removeClass('waves-effect');
 
 		$('#nav-button').hide();
 		$('#exit-button').show();
@@ -29,9 +28,6 @@ var main = function(){
 	$('#exit-button').click(function(){
 		$('.animate-link').removeClass('animate-link');
 		$('.info-card').hide();
-
-		$('.card-panel').addClass('waves-effect');
-
 		$('#exit-button').hide();
 		$('#nav-button').show();
 	})
