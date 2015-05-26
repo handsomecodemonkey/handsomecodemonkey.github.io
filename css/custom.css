@@ -25,16 +25,16 @@
 	top: 0;
 	left: 0;
 	margin: 0;
-	animation: animate-link 1.5s ease-out forwards;
-	-webkit-animation: animate-link 1.5s ease-out forwards;
+	animation: animate-link 1s ease-out forwards;
+	-webkit-animation: animate-link 1s ease-out forwards;
 }
 
 @-webkit-keyframes animate-link{
 	from{
-		height: 0%;
+		width: 0%;
 	}
 	to{
-		height: 100%;
+		width: 100%;
 
 	}
 }
