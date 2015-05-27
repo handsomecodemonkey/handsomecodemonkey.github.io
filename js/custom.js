@@ -16,14 +16,35 @@ var main = function(){
 			case "blog-panel":
 				$('#blog-info').fadeIn(2000);
 				break;
-			case "contact-panel":
-				$('#contact-info').fadeIn(2000);
-				break;
 			case "cv-panel":
 				$('#cv-info').fadeIn(2000);
 				break;
 		}
 
+		$(document).scrollTop(0);
+	});
+
+	$('#a-button').click(function(){
+		$('#nav-button').hide();
+		$('#exit-button').show();
+		$('#about-panel').addClass("animate-link");
+		$('#about-info').fadeIn(2000);
+		$(document).scrollTop(0);
+	});
+
+	$('#b-button').click(function(){
+		$('#nav-button').hide();
+		$('#exit-button').show();
+		$('#blog-panel').addClass('animate-link');
+		$('#blog-info').fadeIn(2000);
+		$(document).scrollTop(0);
+	});
+
+	$('#c-button').click(function(){
+		$('#nav-button').hide();
+		$('#exit-button').show();
+		$('#cv-panel').addClass('animate-link');
+		$('#cv-info').fadeIn(2000);
 		$(document).scrollTop(0);
 	});
 
