@@ -4,21 +4,24 @@
 
 .my-links .card-panel{
 	cursor: pointer;
+	transition: box-shadow 0.5s ease-out;
+	-webkit-transition: box-shadow 0.5s ease-out;
 }
 
 .light-font{
 	font-weight: 200;
 }
 
+.bold-font{
+	font-weight: bold;
+}
+
 .my-links .waves-effect{
 	display: block;
 }
 
-.info-card{
-	
-}
-
 .animate-link{
+	cursor: default !important;
 	overflow: scroll;
 	z-index: 3;
 	width: 100%;
@@ -26,6 +29,12 @@
 	top: 0;
 	left: 0;
 	margin: 0;
-	animation: animate-link 1s ease-out forwards;
-	-webkit-animation: animate-link 1s ease-out forwards;
+}
+
+.card .card-action a{
+	color: #0d47a1;
+}
+
+.card .card-action a:hover{
+	color: #2196f3;
 }
