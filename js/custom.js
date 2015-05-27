@@ -4,24 +4,26 @@ var main = function(){
 	$('#exit-button').hide();
 
 	$('.card-panel').click(function(){
-		$(this).addClass("animate-link");
+		if( !$(this).hasClass("animate-link") ) {
+			$(this).addClass("animate-link");
 
-		$('#nav-button').hide();
-		$('#exit-button').show();
+			$('#nav-button').hide();
+			$('#exit-button').show();
 
-		switch( $(this).attr('id') ) {
-			case "about-panel":
-				$('#about-info').fadeIn(2000);
-				break;
-			case "blog-panel":
-				$('#blog-info').fadeIn(2000);
-				break;
-			case "cv-panel":
-				$('#cv-info').fadeIn(2000);
-				break;
+			switch( $(this).attr('id') ) {
+				case "about-panel":
+					$('#about-info').fadeIn(2000);
+					break;
+				case "blog-panel":
+					$('#blog-info').fadeIn(2000);
+					break;
+				case "cv-panel":
+					$('#cv-info').fadeIn(2000);
+					break;
+			}
+
+			$(document).scrollTop(0);
 		}
-
-		$(document).scrollTop(0);
 	});
 
 	$('#a-button').click(function(){
