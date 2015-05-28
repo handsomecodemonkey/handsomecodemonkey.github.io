@@ -22,7 +22,7 @@
 
 .animate-link{
 	cursor: default !important;
-	overflow: scroll;
+	overflow: auto;
 	z-index: 3;
 	width: 100%;
 	position: absolute;
